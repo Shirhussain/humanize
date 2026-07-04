@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install pytest
+      - name: Run test suite (includes README credibility test)
+        run: pytest -q
+      - name: Lint the humanized examples with their own linter
+        run: python3 scripts/ai_pattern_lint.py tests/fixtures/pairs/*-after.txt
+      - name: Confirm the linter still flags AI text
+        run: |
+          if python3 scripts/ai_pattern_lint.py tests/fixtures/ai_dense.txt > /dev/null; then
+            echo "linter failed to flag known-AI fixture" && exit 1
+          fi
