@@ -1,0 +1,9 @@
+# Nimbus keeps the whole project in one place
+
+Your team already has a project tool. You're here because nobody updates it.
+
+Nimbus syncs task status from the places work actually happens: pull requests close their own tickets, calendar invites become milestones, and a Slack thread can turn into a task without anyone retyping it. The average team stops updating boards by hand within two weeks, because there's nothing left to update.
+
+It loads in under a second with 10,000 tasks on the board. We measure this on every release, on a four-year-old laptop we keep for exactly that reason.
+
+Teams at Deel-sized startups and two national retailers run their launches on Nimbus. The free plan covers five people, no card required. If your team is bigger, the trial is 30 days, and pricing is on one page with no "contact sales" button.

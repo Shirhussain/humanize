@@ -1,0 +1,9 @@
+We passed 10,000 users this morning.
+
+Two years ago we were three people in a co-working space in Leeds, arguing about whether small shops even wanted inventory software. Turns out they do. They just don't want to pay $200 a month for features built for warehouses.
+
+The thing I keep coming back to: 4,000 of those users came from referrals. No ad spend. A bakery in Manchester recommended us to their flour supplier, who recommended us to four other bakeries. That chain is still visible in our signup data.
+
+Plenty went wrong along the way. We rebuilt the barcode scanner three times. We nearly ran out of money in month eight. If you're building something and it feels slow, that's what it felt like from inside this one too.
+
+Thanks to everyone who told a friend about us. That's the whole growth strategy, and it's yours.

@@ -1,0 +1,7 @@
+My company went hybrid in January. Here is what the first six months actually looked like.
+
+The productivity argument turned out to be a wash. Ticket throughput stayed flat. What changed was who thrived: two of our quietest engineers became noticeably more vocal in written discussions, while one of our best collaborators started slipping through the cracks until his manager noticed and moved his one-on-ones to office days.
+
+The real cost was onboarding. The three people we hired in the spring took longer to ramp than any hire from the office era, and all three said the same thing in their retro: they didn't know who to ask small questions. We now assign every new hire a designated question-answerer for their first month. Cheap fix, big difference.
+
+Would I go back to five days in office? No. But I'd stop telling other founders that hybrid is free. You're trading commute hours for coordination work, and the coordination work has to land on someone's calendar or it doesn't happen.
