@@ -1,0 +1,20 @@
+{
+  "name": "humanize",
+  "owner": {
+    "name": "Shirhussain Danishyar"
+  },
+  "description": "Marketplace for the humanize-writing skill",
+  "plugins": [
+    {
+      "name": "humanize-writing",
+      "source": {
+        "source": "github",
+        "repo": "Shirhussain/humanize"
+      },
+      "description": "Remove documented AI-writing patterns from generated and existing text, with register awareness and voice calibration",
+      "version": "2.0.0",
+      "license": "MIT",
+      "homepage": "https://github.com/Shirhussain/humanize#readme"
+    }
+  ]
+}
