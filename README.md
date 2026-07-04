@@ -4,30 +4,33 @@ A skill that makes AI-assisted text read like a person wrote it — while writin
 
 Most tools in this space rewrite finished text. This one works in both directions: it shapes prose *as it's generated* so the patterns never appear, and it cleans existing text when you paste some in. It knows a cold email shouldn't be humanized like a formal report, it can learn *your* voice from a few paragraphs of your writing, and it ships with a stdlib-only Python linter you can run in CI.
 
+It is not tied to any one assistant. The skill is plain Markdown in the open [Agent Skills](https://agentskills.io) format, so it works in Claude Code, Cursor, GitHub Copilot, Codex CLI, Amp, and any other harness that reads a `SKILL.md` — and the linter is a standalone script that needs nothing but Python.
+
 Grounded in primary sources: Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (WikiProject AI Cleanup) and corpus studies of LLM excess vocabulary across 15M+ PubMed abstracts ([arXiv:2406.07016](https://arxiv.org/abs/2406.07016), [arXiv:2502.09606](https://arxiv.org/abs/2502.09606)).
 
 ## Install
 
-**Claude Code (plugin):**
+**Any agent, via the skills CLI** (installs into Claude Code, Cursor, Copilot, Codex, and others — it detects what you use):
+
+```
+npx skills add Shirhussain/humanize
+```
+
+**Manual, for any harness that reads SKILL.md** — clone it into wherever your tool looks for skills:
+
+```
+git clone https://github.com/Shirhussain/humanize.git
+# e.g. ~/.claude/skills/humanize-writing, ~/.cursor/skills/humanize-writing, ...
+```
+
+**Claude Code specifically**, as a plugin:
 
 ```
 /plugin marketplace add Shirhussain/humanize
 /plugin install humanize-writing@humanize
 ```
 
-**Any agent with the skills CLI:**
-
-```
-npx skills add Shirhussain/humanize
-```
-
-**Manual (any harness that reads SKILL.md):**
-
-```
-git clone https://github.com/Shirhussain/humanize.git ~/.claude/skills/humanize-writing
-```
-
-The skill is plain Markdown, so any tool that follows the [Agent Skills](https://agentskills.io) convention can load it from wherever you clone it.
+Whatever the harness, the skill is the same three Markdown files; `AGENTS.md` at the repo root tells any agent how to load and apply it.
 
 ## Usage
 
